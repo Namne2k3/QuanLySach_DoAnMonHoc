@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1DD49270-573A-4308-930E-3AD6767A4075}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BaoCao_QLSach</RootNamespace>
+    <AssemblyName>BaoCao_QLSach</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="formAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAdmin.Designer.cs">
+      <DependentUpon>formAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formChangePass.Designer.cs">
+      <DependentUpon>formChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formCT_HD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formCT_HD.Designer.cs">
+      <DependentUpon>formCT_HD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDoanhThu.Designer.cs">
+      <DependentUpon>formDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formFeedback.Designer.cs">
+      <DependentUpon>formFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formForgotPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formForgotPass.Designer.cs">
+      <DependentUpon>formForgotPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formGH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formGH.Designer.cs">
+      <DependentUpon>formGH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formNhapSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formNhapSach.Designer.cs">
+      <DependentUpon>formNhapSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPhieuNhap.Designer.cs">
+      <DependentUpon>formPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formQuanLyFB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formQuanLyFB.Designer.cs">
+      <DependentUpon>formQuanLyFB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formQuanLySach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formQuanLySach.Designer.cs">
+      <DependentUpon>formQuanLySach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formQuanTiTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formQuanTiTK.Designer.cs">
+      <DependentUpon>formQuanTiTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formRegister.Designer.cs">
+      <DependentUpon>formRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLogin.Designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formTK.Designer.cs">
+      <DependentUpon>formTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formUser.Designer.cs">
+      <DependentUpon>formUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mdiProperties.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formAdmin.resx">
+      <DependentUpon>formAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formChangePass.resx">
+      <DependentUpon>formChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formCT_HD.resx">
+      <DependentUpon>formCT_HD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDoanhThu.resx">
+      <DependentUpon>formDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formFeedback.resx">
+      <DependentUpon>formFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formForgotPass.resx">
+      <DependentUpon>formForgotPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formGH.resx">
+      <DependentUpon>formGH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLogin.resx">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formNhapSach.resx">
+      <DependentUpon>formNhapSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPhieuNhap.resx">
+      <DependentUpon>formPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formQuanLyFB.resx">
+      <DependentUpon>formQuanLyFB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formQuanLySach.resx">
+      <DependentUpon>formQuanLySach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formQuanTiTK.resx">
+      <DependentUpon>formQuanTiTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formRegister.resx">
+      <DependentUpon>formRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formTK.resx">
+      <DependentUpon>formTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formUser.resx">
+      <DependentUpon>formUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{9962b9dc-6f33-4cf1-b753-96f1af2030cc}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{f1f95463-a29f-48c6-98a2-dfc390803aa5}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hamburger_icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hamburger_button_menu_icon_155296.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,15 @@
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BaoCao_QLSach\bin\Debug\BaoCao_QLSach.exe.config
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BaoCao_QLSach\bin\Debug\BaoCao_QLSach.exe
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BaoCao_QLSach\bin\Debug\BaoCao_QLSach.pdb
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BaoCao_QLSach\bin\Debug\EntityFramework.dll
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BaoCao_QLSach\bin\Debug\EntityFramework.SqlServer.dll
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BaoCao_QLSach\bin\Debug\EntityFramework.xml
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BaoCao_QLSach\bin\Debug\EntityFramework.SqlServer.xml
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BaoCao_QLSach\obj\Debug\BaoCao_QLSach.csproj.AssemblyReference.cache
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BaoCao_QLSach\obj\Debug\BaoCao_QLSach.Properties.Resources.resources
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BaoCao_QLSach\obj\Debug\BaoCao_QLSach.csproj.GenerateResource.cache
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BaoCao_QLSach\obj\Debug\BaoCao_QLSach.csproj.CoreCompileInputs.cache
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BaoCao_QLSach\obj\Debug\BaoCao_QLSach.csproj.CopyComplete
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BaoCao_QLSach\obj\Debug\BaoCao_QLSach.exe
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BaoCao_QLSach\obj\Debug\BaoCao_QLSach.pdb
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BaoCao_QLSach\obj\Debug\BaoCao_QLSach.formLogin.resources

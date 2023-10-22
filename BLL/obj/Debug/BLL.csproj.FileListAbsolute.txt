@@ -1,0 +1,14 @@
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BLL\bin\Debug\BLL.dll
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BLL\bin\Debug\BLL.pdb
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BLL\bin\Debug\DAL.dll
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BLL\bin\Debug\EntityFramework.dll
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BLL\bin\Debug\EntityFramework.SqlServer.dll
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BLL\bin\Debug\DAL.pdb
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BLL\bin\Debug\DAL.dll.config
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BLL\bin\Debug\EntityFramework.xml
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BLL\bin\Debug\EntityFramework.SqlServer.xml
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BLL\obj\Debug\BLL.dll
+D:\File\Code\.NET\BaoCao_DoAn_QLSACH\BaoCao_QLSach\BaoCao_QLSach\BLL\obj\Debug\BLL.pdb
