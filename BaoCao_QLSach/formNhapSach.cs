@@ -18,12 +18,13 @@ namespace BaoCao_QLSach
         private SachService sachService = new SachService();
         private KhoSachNccService khoSachNccService = new KhoSachNccService();
         private KhoSachService ksService = new KhoSachService();
-        private ChiTietKsService ctksService = new ChiTietKsService();
+        private ChiTietKsService ctksService;
         private PhieuNhapService pnService = new PhieuNhapService();
         private ChiTietPhieuNhapService ctpnService = new ChiTietPhieuNhapService();
-        public formNhapSach()
+        public formNhapSach( ChiTietKsService ctksService )
         {
             InitializeComponent();
+            this.ctksService = ctksService;
         }
         private void BindComboboxKS ()
         {

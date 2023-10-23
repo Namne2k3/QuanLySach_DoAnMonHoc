@@ -18,12 +18,13 @@ namespace BaoCao_QLSach
         public SachService sachService = new SachService();
         public KhoSachNccService khosachNccService = new KhoSachNccService();
         public NhaCungCapService nhaCungCapService = new NhaCungCapService();
-        public ChiTietKsService chiTietKsService = new ChiTietKsService();
+        public ChiTietKsService chiTietKsService;
 
         public formNhapSach formNhapSach;
-        public formQuanLySach()
+        public formQuanLySach(ChiTietKsService ctksService )
         {
             InitializeComponent();
+            this.chiTietKsService = ctksService;
         }
 
         private void BindComboBoxKS()

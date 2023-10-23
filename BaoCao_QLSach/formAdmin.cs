@@ -21,7 +21,7 @@ namespace BaoCao_QLSach
         public formQuanTiTK formQuanTiTK;
         public formDoanhThu formDoanhThu;
         public formQuanLyFB formQLFB;
-        
+        public ChiTietKsService ctksService = new ChiTietKsService();
         
         public formAdmin()
         {
@@ -91,7 +91,7 @@ namespace BaoCao_QLSach
         {
             if (formNS == null )
             {
-                formNS = new formNhapSach();
+                formNS = new formNhapSach(ctksService);
                 formNS.FormClosed += FormNhapSach_FormClosed;
                 formNS.MdiParent = this;
                 formNS.Dock = DockStyle.Fill;
@@ -111,7 +111,7 @@ namespace BaoCao_QLSach
         {
             if ( formQuanLySach == null )
             {
-                formQuanLySach = new formQuanLySach();
+                formQuanLySach = new formQuanLySach(ctksService);
                 formQuanLySach.FormClosed += FormQuanLySach_FormClosed;
                 formQuanLySach.MdiParent = this; 
                 formQuanLySach.Dock = DockStyle.Fill;
