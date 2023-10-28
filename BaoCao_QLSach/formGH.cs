@@ -18,14 +18,15 @@ namespace BaoCao_QLSach
         private TaiKhoanService taikhoanService;
         private SachService sachService = new SachService();
         private GioHangService gioHangService ;
-        private ChiTietKsService ctksService = new ChiTietKsService();
+        private ChiTietKsService ctksService;
         private TaiKhoan tk;
-        public formGH(TaiKhoanService taikhoanService, TaiKhoan tk, GioHangService gioHangService)
+        public formGH(TaiKhoanService taikhoanService, TaiKhoan tk, GioHangService gioHangService, ChiTietKsService ctksService)
         {
             InitializeComponent();
             this.taikhoanService = taikhoanService;
             this.tk = tk;
             this.gioHangService = gioHangService;
+            this.ctksService = ctksService;
         }
         private void Clear ()
         {
@@ -131,17 +132,20 @@ namespace BaoCao_QLSach
                     {
                         if (dg.Rows[i].Cells[0].Value.ToString() == "1")
                         {
-                            if (int.Parse(dg.Rows[i].Cells[6].Value.ToString()) > ctksService.FindKsByMaKS_MaS(dg.Rows[i].Cells[7].Value.ToString(), sachService.findSachByID(dg.Rows[i].Cells[1].Value.ToString()).MaSach).Soluong)
+                            if (int.Parse(dg.Rows[i].Cells[6].Value.ToString()) != 0 )
                             {
-                                throw new Exception("Khong du so luong sach co ma: " + dg.Rows[i].Cells[1].Value.ToString());
-                            } else
-                            {
-                                ChiTiet_HD ct = new ChiTiet_HD();
-                                //ct.MaHD = hd.MaHD;
-                                ct.MaSach = sachService.findSachByID(dg.Rows[i].Cells[1].Value.ToString()).MaSach;
-                                ct.SoLuong = int.Parse(dg.Rows[i].Cells[6].Value.ToString());
-                                hd.ChiTiet_HD.Add(ct);
-                                ctksService.FindKsByMaKS_MaS(dg.Rows[i].Cells[7].Value.ToString(), sachService.findSachByID(dg.Rows[i].Cells[1].Value.ToString()).MaSach).Soluong -= int.Parse(dg.Rows[i].Cells[6].Value.ToString());
+                                if (int.Parse(dg.Rows[i].Cells[6].Value.ToString()) > ctksService.FindKsByMaKS_MaS(dg.Rows[i].Cells[7].Value.ToString(), sachService.findSachByID(dg.Rows[i].Cells[1].Value.ToString()).MaSach).Soluong)
+                                {
+                                    throw new Exception("Khong du so luong sach co ma: " + dg.Rows[i].Cells[1].Value.ToString());
+                                } else
+                                {
+                                    ChiTiet_HD ct = new ChiTiet_HD();
+                                    //ct.MaHD = hd.MaHD;
+                                    ct.MaSach = sachService.findSachByID(dg.Rows[i].Cells[1].Value.ToString()).MaSach;
+                                    ct.SoLuong = int.Parse(dg.Rows[i].Cells[6].Value.ToString());
+                                    hd.ChiTiet_HD.Add(ct);
+                                    ctksService.FindKsByMaKS_MaS(dg.Rows[i].Cells[7].Value.ToString(), sachService.findSachByID(dg.Rows[i].Cells[1].Value.ToString()).MaSach).Soluong -= int.Parse(dg.Rows[i].Cells[6].Value.ToString());
+                                }
                             }
                         }
                     }
@@ -193,30 +197,58 @@ namespace BaoCao_QLSach
 
         private void dg_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            if (dg.Rows.Count > 0)
+            try
             {
-                if ( e.ColumnIndex == 6 )
+                int soluong = 0;
+                int giatien = 0;
+                int count = 0; 
+                if (dg.Rows.Count > 0)
                 {
-                    try
+                    if ( e.ColumnIndex == 6 )
                     {
-                        int soluong = 0;
-                        int giatien = 0;
-                        int count = 0; 
                         for (int i = 0; i < dg.Rows.Count; i++)
                         {
                             if (dg.Rows[i].Cells[0].Value.ToString() == "1")
                             {
-                                count++;
-                                soluong += int.Parse(dg.Rows[i].Cells[6].Value.ToString());
-                                giatien += (int.Parse(dg.Rows[i].Cells[6].Value.ToString()) * int.Parse(dg.Rows[i].Cells[4].Value.ToString()));
+                                if (dg.Rows[i].Cells[6].Value.ToString() != "" )
+                                {
+                                    count++;
+                                    soluong += int.Parse(dg.Rows[i].Cells[6].Value.ToString());
+                                    giatien += (int.Parse(dg.Rows[i].Cells[6].Value.ToString()) * int.Parse(dg.Rows[i].Cells[4].Value.ToString()));
+                                } 
                             }
                         }
                         btSubmit.Enabled = false;
                     }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void Column_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Check if the key is not a digit or a control character
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                // Cancel the input
+                e.Handled = true;
+            }
+        }
+        private void dg_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            e.Control.KeyPress -= new KeyPressEventHandler(Column_KeyPress);
+
+            // Check if the current column is the desired one
+            if (dg.CurrentCell.ColumnIndex == 6) // Change 0 to your column index
+            {
+                // Cast the editing control to a TextBox
+                TextBox tb = e.Control as TextBox;
+                if (tb != null)
+                {
+                    // Add a new handler
+                    tb.KeyPress += new KeyPressEventHandler(Column_KeyPress);
                 }
             }
         }

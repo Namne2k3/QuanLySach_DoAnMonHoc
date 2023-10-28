@@ -18,6 +18,10 @@ namespace BLL
         {
             this.repo = new ChiTietKsRepo(context);
         }
+        public List<ChiTiet_KS> FindCTKSByID( string id )
+        {
+            return repo.GetCTKSById(id);
+        }
         public int? FindSlBy( string maks, string masach )
         {
             return repo.GetSL(maks, masach);

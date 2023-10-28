@@ -37,7 +37,7 @@ namespace BaoCao_QLSach
                     if ( search != null )
                     {
                         dv.Rows.Clear();
-                        foreach (var item in ks.ChiTiet_KS)
+                        foreach (var item in ctksService.FindCTKSByID(ks.MaKS))
                         {
                             if (sachService.findSachByID(item.MaSach).MaTL == tl && sachService.findSachByID(item.MaSach).TenSach.ToLower().Contains(search.ToLower()) )
                             {
@@ -193,7 +193,7 @@ namespace BaoCao_QLSach
 
         private void gioHangToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            formGH form = new formGH(taiKhoanService, tk, ghService);
+            formGH form = new formGH(taiKhoanService, tk, ghService, ctksService);
             form.ShowDialog();
 
         }

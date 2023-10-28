@@ -12,6 +12,9 @@ namespace DAL
     {
         private Model1 context;
 
+        public List<ChiTiet_KS> GetCTKSById ( string id )
+        {
+            return context.ChiTiet_KS.Where(p => p.MaKS == id).ToList();        }
         public ChiTietKsRepo ( Model1 context)
         {
             this.context = context;

@@ -68,6 +68,7 @@
             this.dg.Size = new System.Drawing.Size(597, 256);
             this.dg.TabIndex = 0;
             this.dg.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_CellEndEdit);
+            this.dg.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dg_EditingControlShowing);
             // 
             // colMa
             // 

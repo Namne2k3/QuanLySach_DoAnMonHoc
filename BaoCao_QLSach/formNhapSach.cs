@@ -186,5 +186,30 @@ namespace BaoCao_QLSach
                 }
             }
         }
+        private void Column_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Check if the key is not a digit or a control character
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                // Cancel the input
+                e.Handled = true;
+            }
+        }
+        private void dtg_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            e.Control.KeyPress -= new KeyPressEventHandler(Column_KeyPress);
+
+            // Check if the current column is the desired one
+            if (dtg.CurrentCell.ColumnIndex == 6) // Change 0 to your column index
+            {
+                // Cast the editing control to a TextBox
+                TextBox tb = e.Control as TextBox;
+                if (tb != null)
+                {
+                    // Add a new handler
+                    tb.KeyPress += new KeyPressEventHandler(Column_KeyPress);
+                }
+            }
+        }
     }
 }

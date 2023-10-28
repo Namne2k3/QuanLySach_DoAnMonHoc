@@ -68,6 +68,7 @@
             this.dtg.Size = new System.Drawing.Size(711, 419);
             this.dtg.TabIndex = 0;
             this.dtg.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_CellClick);
+            this.dtg.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dtg_EditingControlShowing);
             // 
             // colMa
             // 
