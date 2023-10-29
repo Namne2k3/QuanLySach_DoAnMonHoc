@@ -101,5 +101,10 @@ namespace BaoCao_QLSach
         {
             tbMK.UseSystemPasswordChar = !checkBox1.Checked;
         }
+
+        private void btExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

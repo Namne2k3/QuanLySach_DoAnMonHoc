@@ -252,5 +252,10 @@ namespace BaoCao_QLSach
                 }
             }
         }
+
+        private void btExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

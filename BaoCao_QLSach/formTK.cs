@@ -110,5 +110,10 @@ namespace BaoCao_QLSach
             formCT_HD form = new formCT_HD(hoaDonService.FindHdByMaHd(int.Parse(dt.Rows[e.RowIndex].Cells[0].Value.ToString())));
             form.Show();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

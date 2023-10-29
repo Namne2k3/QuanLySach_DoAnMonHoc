@@ -52,6 +52,8 @@
             // dtg
             // 
             this.dtg.AllowUserToAddRows = false;
+            this.dtg.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dtg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colMa,
@@ -60,12 +62,12 @@
             this.colTL,
             this.colCS,
             this.colSL});
-            this.dtg.Location = new System.Drawing.Point(619, 95);
+            this.dtg.Location = new System.Drawing.Point(619, 88);
             this.dtg.Name = "dtg";
             this.dtg.RowHeadersVisible = false;
             this.dtg.RowHeadersWidth = 51;
             this.dtg.RowTemplate.Height = 24;
-            this.dtg.Size = new System.Drawing.Size(711, 419);
+            this.dtg.Size = new System.Drawing.Size(711, 426);
             this.dtg.TabIndex = 0;
             this.dtg.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_CellClick);
             this.dtg.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dtg_EditingControlShowing);
@@ -123,22 +125,28 @@
             this.cbNcc.FormattingEnabled = true;
             this.cbNcc.Location = new System.Drawing.Point(30, 150);
             this.cbNcc.Name = "cbNcc";
-            this.cbNcc.Size = new System.Drawing.Size(248, 24);
+            this.cbNcc.Size = new System.Drawing.Size(248, 26);
             this.cbNcc.TabIndex = 1;
             this.cbNcc.SelectedIndexChanged += new System.EventHandler(this.cbNcc_SelectedIndexChanged);
             // 
             // btImport
             // 
-            this.btImport.Location = new System.Drawing.Point(30, 350);
+            this.btImport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.btImport.FlatAppearance.BorderSize = 0;
+            this.btImport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btImport.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btImport.ForeColor = System.Drawing.Color.White;
+            this.btImport.Location = new System.Drawing.Point(30, 343);
             this.btImport.Name = "btImport";
-            this.btImport.Size = new System.Drawing.Size(114, 43);
+            this.btImport.Size = new System.Drawing.Size(248, 43);
             this.btImport.TabIndex = 3;
             this.btImport.Text = "Nhập sách";
-            this.btImport.UseVisualStyleBackColor = true;
+            this.btImport.UseVisualStyleBackColor = false;
             this.btImport.Click += new System.EventHandler(this.btImport_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Window;
             this.groupBox1.Controls.Add(this.cbKS);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label6);
@@ -148,9 +156,11 @@
             this.groupBox1.Controls.Add(this.tbDate);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(285, 88);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.groupBox1.Location = new System.Drawing.Point(285, 80);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(317, 426);
+            this.groupBox1.Size = new System.Drawing.Size(317, 434);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin phiếu nhập";
@@ -161,7 +171,7 @@
             this.cbKS.FormattingEnabled = true;
             this.cbKS.Location = new System.Drawing.Point(30, 213);
             this.cbKS.Name = "cbKS";
-            this.cbKS.Size = new System.Drawing.Size(248, 24);
+            this.cbKS.Size = new System.Drawing.Size(248, 26);
             this.cbKS.TabIndex = 10;
             // 
             // label1
@@ -169,7 +179,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(27, 194);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 16);
+            this.label1.Size = new System.Drawing.Size(152, 18);
             this.label1.TabIndex = 9;
             this.label1.Text = "Kho sách cần nhập";
             // 
@@ -178,7 +188,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(27, 131);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 16);
+            this.label6.Size = new System.Drawing.Size(111, 18);
             this.label6.TabIndex = 8;
             this.label6.Text = "Nhà cung cấp";
             // 
@@ -188,7 +198,7 @@
             this.tbTT.Location = new System.Drawing.Point(30, 278);
             this.tbTT.Name = "tbTT";
             this.tbTT.ReadOnly = true;
-            this.tbTT.Size = new System.Drawing.Size(248, 22);
+            this.tbTT.Size = new System.Drawing.Size(248, 24);
             this.tbTT.TabIndex = 5;
             // 
             // tbDate
@@ -197,7 +207,7 @@
             this.tbDate.Location = new System.Drawing.Point(30, 88);
             this.tbDate.Name = "tbDate";
             this.tbDate.ReadOnly = true;
-            this.tbDate.Size = new System.Drawing.Size(248, 22);
+            this.tbDate.Size = new System.Drawing.Size(248, 24);
             this.tbDate.TabIndex = 4;
             // 
             // label4
@@ -205,7 +215,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(27, 259);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 16);
+            this.label4.Size = new System.Drawing.Size(91, 18);
             this.label4.TabIndex = 2;
             this.label4.Text = "Thành tiền:";
             // 
@@ -214,7 +224,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(27, 55);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 16);
+            this.label3.Size = new System.Drawing.Size(105, 18);
             this.label3.TabIndex = 1;
             this.label3.Text = "Ngày hiện tại";
             // 
@@ -222,6 +232,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1426, 584);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dtg);

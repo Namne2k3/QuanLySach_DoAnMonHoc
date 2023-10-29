@@ -123,6 +123,7 @@ namespace BaoCao_QLSach
                     var findTk = taiKhoanService.FindTkByEmail(tbEmail.Text);
                     formChangePass form = new formChangePass(taiKhoanService, findTk);
                     this.Hide();
+                    MessageBox.Show("Xác thực thành công!");
                     form.ShowDialog();
                     this.Close();
                 }
@@ -135,6 +136,11 @@ namespace BaoCao_QLSach
         {
             tbCode.Enabled = false;
             btSubmit.Enabled = false;
+        }
+
+        private void btExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

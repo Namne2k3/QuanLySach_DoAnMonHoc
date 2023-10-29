@@ -30,13 +30,13 @@ namespace BaoCao_QLSach
             form.ShowDialog();
             this.Show();
         }
-        private void linkChuaTK_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            formRegister form = new formRegister(taiKhoanService);
-            this.Hide();
-            form.ShowDialog();
-            this.Show();
-        }
+        //private void linkChuaTK_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        //{
+        //    formRegister form = new formRegister(taiKhoanService);
+        //    this.Hide();
+        //    form.ShowDialog();
+        //    this.Show();
+        //}
         private void Login()
         {
             try
@@ -90,6 +90,19 @@ namespace BaoCao_QLSach
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             tbMk.UseSystemPasswordChar = !cbPass.Checked;
+        }
+
+        private void btRegister_Click(object sender, EventArgs e)
+        {
+            formRegister form = new formRegister(taiKhoanService);
+            this.Hide();
+            form.ShowDialog();
+            this.Show();
+        }
+
+        private void btExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

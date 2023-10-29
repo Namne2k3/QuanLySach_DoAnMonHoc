@@ -190,20 +190,6 @@ namespace BaoCao_QLSach
             BindDataGrid(khoSachService.FindKsById(cbKS.SelectedValue.ToString())) ; 
             BindComboBoxTl();
         }
-
-        private void gioHangToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            formGH form = new formGH(taiKhoanService, tk, ghService, ctksService);
-            form.ShowDialog();
-
-        }
-
-        private void tàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            formTK form = new formTK(taiKhoanService,tk);
-            form.ShowDialog();
-        }
-
         private void tbSearch_TextChanged(object sender, EventArgs e)
         {
             BindDataGrid(khoSachService.FindKsById(cbKS.SelectedValue.ToString()), tbSearch.Text, cbTL.SelectedValue.ToString());
@@ -214,15 +200,27 @@ namespace BaoCao_QLSach
             BindDataGrid(khoSachService.FindKsById(cbKS.SelectedValue.ToString()),tbSearch.Text, cbTL.SelectedValue.ToString());   
         }
 
-        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btCart_Click(object sender, EventArgs e)
         {
-            this.Close();
+            formGH form = new formGH(taiKhoanService, tk, ghService, ctksService);
+            form.ShowDialog();
         }
 
-        private void đăngFeedbackToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btAccount_Click(object sender, EventArgs e)
+        {
+            formTK form = new formTK(taiKhoanService, tk);
+            form.ShowDialog();
+        }
+
+        private void btFeedback_Click(object sender, EventArgs e)
         {
             formFeedback form = new formFeedback(tk);
             form.ShowDialog();
+        }
+
+        private void btLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
