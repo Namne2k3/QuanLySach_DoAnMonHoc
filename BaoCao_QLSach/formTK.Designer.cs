@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.btSubmit = new System.Windows.Forms.Button();
             this.btEmail = new System.Windows.Forms.Button();
             this.btPass = new System.Windows.Forms.Button();
@@ -38,7 +39,6 @@
             this.tbMK = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dt)).BeginInit();
             this.SuspendLayout();
@@ -63,6 +63,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin tài khoản";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label4.Location = new System.Drawing.Point(265, 212);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(202, 18);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "( double click để xem chi tiết )";
             // 
             // btSubmit
             // 
@@ -155,16 +165,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Mật khẩu:";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label4.Location = new System.Drawing.Point(265, 212);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(202, 18);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "( double click để xem chi tiết )";
-            // 
             // formTK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -172,6 +172,7 @@
             this.ClientSize = new System.Drawing.Size(521, 494);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "formTK";
             this.Text = "Tài khoản";

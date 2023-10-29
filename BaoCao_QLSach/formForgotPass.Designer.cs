@@ -118,6 +118,7 @@
             this.Controls.Add(this.btRequest);
             this.Controls.Add(this.tbEmail);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "formForgotPass";
             this.Text = "Đổi mật khẩu";
             this.Load += new System.EventHandler(this.formForgotPass_Load);

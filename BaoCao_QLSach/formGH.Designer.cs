@@ -214,6 +214,7 @@
             this.ClientSize = new System.Drawing.Size(935, 276);
             this.Controls.Add(this.groupbox);
             this.Controls.Add(this.dg);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "formGH";
             this.Text = "Giỏ hàng";
             this.Load += new System.EventHandler(this.formGH_Load);

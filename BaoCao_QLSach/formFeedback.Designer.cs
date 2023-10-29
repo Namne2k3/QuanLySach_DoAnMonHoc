@@ -190,6 +190,7 @@
             this.ClientSize = new System.Drawing.Size(503, 638);
             this.Controls.Add(this.dtg);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "formFeedback";
             this.Text = "Đăng phản hồi";
             this.Load += new System.EventHandler(this.formFeedback_Load);
