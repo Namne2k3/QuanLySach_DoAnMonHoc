@@ -181,6 +181,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dg);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "formCT_HD";
             this.Text = "Chi tiết hóa đơn";
             this.Load += new System.EventHandler(this.formCT_HD_Load);

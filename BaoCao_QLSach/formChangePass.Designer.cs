@@ -135,6 +135,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(542, 306);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "formChangePass";
             this.Text = "Thay đổi mật khẩu";
             this.Load += new System.EventHandler(this.formChangePass_Load);

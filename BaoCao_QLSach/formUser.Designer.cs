@@ -32,6 +32,8 @@
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gioHangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.đăngFeedbackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dv = new System.Windows.Forms.DataGridView();
             this.colMa = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,8 +49,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cbTL = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.đăngFeedbackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dv)).BeginInit();
             this.SuspendLayout();
@@ -79,21 +79,33 @@
             // gioHangToolStripMenuItem
             // 
             this.gioHangToolStripMenuItem.Name = "gioHangToolStripMenuItem";
-            this.gioHangToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.gioHangToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
             this.gioHangToolStripMenuItem.Text = "Giỏ hàng";
             this.gioHangToolStripMenuItem.Click += new System.EventHandler(this.gioHangToolStripMenuItem_Click);
             // 
             // tàiKhoảnToolStripMenuItem
             // 
             this.tàiKhoảnToolStripMenuItem.Name = "tàiKhoảnToolStripMenuItem";
-            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
             this.tàiKhoảnToolStripMenuItem.Text = "Tài khoản";
             this.tàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.tàiKhoảnToolStripMenuItem_Click);
+            // 
+            // đăngFeedbackToolStripMenuItem
+            // 
+            this.đăngFeedbackToolStripMenuItem.Name = "đăngFeedbackToolStripMenuItem";
+            this.đăngFeedbackToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
+            this.đăngFeedbackToolStripMenuItem.Text = "Đăng Feedback";
+            this.đăngFeedbackToolStripMenuItem.Click += new System.EventHandler(this.đăngFeedbackToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(192, 6);
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
             this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
             // 
@@ -232,18 +244,6 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Thể loại";
             // 
-            // đăngFeedbackToolStripMenuItem
-            // 
-            this.đăngFeedbackToolStripMenuItem.Name = "đăngFeedbackToolStripMenuItem";
-            this.đăngFeedbackToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.đăngFeedbackToolStripMenuItem.Text = "Đăng Feedback";
-            this.đăngFeedbackToolStripMenuItem.Click += new System.EventHandler(this.đăngFeedbackToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
-            // 
             // formUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -258,6 +258,7 @@
             this.Controls.Add(this.cbKS);
             this.Controls.Add(this.dv);
             this.Controls.Add(this.menuStrip2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "formUser";
             this.Text = "Mua sách";
             this.Load += new System.EventHandler(this.formUser_Load);

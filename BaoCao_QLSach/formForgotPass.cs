@@ -101,7 +101,6 @@ namespace BaoCao_QLSach
                     {
                         throw new Exception(sendEmail(tbEmail.Text, "Thay doi mat khau", code));
                     }
-
                 } else
                 {
                     throw new Exception("Email chua duoc dang ky!");
@@ -132,7 +131,6 @@ namespace BaoCao_QLSach
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void formForgotPass_Load(object sender, EventArgs e)
         {
             tbCode.Enabled = false;
