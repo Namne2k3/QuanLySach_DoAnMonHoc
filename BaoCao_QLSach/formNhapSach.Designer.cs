@@ -45,14 +45,17 @@
             this.tbDate = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtg)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dtg
             // 
             this.dtg.AllowUserToAddRows = false;
-            this.dtg.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dtg.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dtg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -62,12 +65,12 @@
             this.colTL,
             this.colCS,
             this.colSL});
-            this.dtg.Location = new System.Drawing.Point(619, 88);
+            this.dtg.Location = new System.Drawing.Point(0, 124);
             this.dtg.Name = "dtg";
             this.dtg.RowHeadersVisible = false;
             this.dtg.RowHeadersWidth = 51;
             this.dtg.RowTemplate.Height = 24;
-            this.dtg.Size = new System.Drawing.Size(711, 426);
+            this.dtg.Size = new System.Drawing.Size(746, 389);
             this.dtg.TabIndex = 0;
             this.dtg.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_CellClick);
             this.dtg.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dtg_EditingControlShowing);
@@ -228,14 +231,35 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Ngày hiện tại";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.dtg);
+            this.panel1.Location = new System.Drawing.Point(619, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(746, 513);
+            this.panel1.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(233, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(308, 34);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Kho sách nhà cung cấp";
+            // 
             // formNhapSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1426, 584);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dtg);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formNhapSach";
             this.Text = "formNhapSach";
@@ -243,6 +267,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtg)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -266,5 +292,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colSL;
         private System.Windows.Forms.ComboBox cbKS;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -223,6 +223,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.dtg);
+            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.panel1.Location = new System.Drawing.Point(800, 37);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(559, 545);

@@ -216,7 +216,5 @@ namespace BaoCao_QLSach
             this.Close();
             MessageBox.Show("Đã đăng xuất!");
         }
-
-        
     }
 }

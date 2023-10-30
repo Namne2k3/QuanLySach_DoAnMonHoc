@@ -185,7 +185,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.dtg);
-            this.panel1.ForeColor = System.Drawing.Color.White;
+            this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(797, 41);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(571, 598);
@@ -255,6 +255,7 @@
             this.Controls.Add(this.tbTK);
             this.Controls.Add(this.tbMK);
             this.Controls.Add(this.label3);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formQuanTiTK";
             this.Text = "formQuanTiTK";

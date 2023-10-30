@@ -88,22 +88,22 @@
             // 
             // tbNhapLai
             // 
-            this.tbNhapLai.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbNhapLai.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbNhapLai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNhapLai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.tbNhapLai.Location = new System.Drawing.Point(52, 188);
+            this.tbNhapLai.Location = new System.Drawing.Point(64, 194);
             this.tbNhapLai.Name = "tbNhapLai";
-            this.tbNhapLai.Size = new System.Drawing.Size(368, 28);
+            this.tbNhapLai.Size = new System.Drawing.Size(356, 21);
             this.tbNhapLai.TabIndex = 3;
             // 
             // tbNewMk
             // 
-            this.tbNewMk.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbNewMk.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbNewMk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNewMk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.tbNewMk.Location = new System.Drawing.Point(52, 109);
+            this.tbNewMk.Location = new System.Drawing.Point(62, 116);
             this.tbNewMk.Name = "tbNewMk";
-            this.tbNewMk.Size = new System.Drawing.Size(370, 28);
+            this.tbNewMk.Size = new System.Drawing.Size(358, 21);
             this.tbNewMk.TabIndex = 2;
             // 
             // errNhapLaiMk

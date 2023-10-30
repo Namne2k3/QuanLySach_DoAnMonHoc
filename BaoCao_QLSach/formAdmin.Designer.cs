@@ -73,9 +73,9 @@
             this.sidebar.Controls.Add(this.panel4);
             this.sidebar.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sidebar.ForeColor = System.Drawing.Color.White;
-            this.sidebar.Location = new System.Drawing.Point(0, 45);
+            this.sidebar.Location = new System.Drawing.Point(-2, 45);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(246, 576);
+            this.sidebar.Size = new System.Drawing.Size(248, 576);
             this.sidebar.TabIndex = 7;
             // 
             // menuContainer
@@ -88,6 +88,7 @@
             this.menuContainer.Controls.Add(this.panel7);
             this.menuContainer.Controls.Add(this.panel8);
             this.menuContainer.Controls.Add(this.panel9);
+            this.menuContainer.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuContainer.Location = new System.Drawing.Point(3, 3);
             this.menuContainer.Name = "menuContainer";
             this.menuContainer.Size = new System.Drawing.Size(243, 425);
@@ -105,7 +106,9 @@
             // btMenu
             // 
             this.btMenu.BackColor = System.Drawing.Color.DarkBlue;
-            this.btMenu.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMenu.FlatAppearance.BorderSize = 0;
+            this.btMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btMenu.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btMenu.ForeColor = System.Drawing.Color.White;
             this.btMenu.Image = ((System.Drawing.Image)(resources.GetObject("btMenu.Image")));
             this.btMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -124,17 +127,19 @@
             this.panel1.Controls.Add(this.btImport);
             this.panel1.Location = new System.Drawing.Point(3, 63);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(284, 54);
+            this.panel1.Size = new System.Drawing.Size(240, 54);
             this.panel1.TabIndex = 11;
             // 
             // btImport
             // 
             this.btImport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.btImport.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btImport.FlatAppearance.BorderSize = 0;
+            this.btImport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btImport.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btImport.ForeColor = System.Drawing.Color.White;
             this.btImport.Image = ((System.Drawing.Image)(resources.GetObject("btImport.Image")));
             this.btImport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btImport.Location = new System.Drawing.Point(-6, -10);
+            this.btImport.Location = new System.Drawing.Point(-6, -9);
             this.btImport.Name = "btImport";
             this.btImport.Padding = new System.Windows.Forms.Padding(12);
             this.btImport.Size = new System.Drawing.Size(253, 73);
@@ -149,22 +154,24 @@
             this.panel5.Controls.Add(this.btPn);
             this.panel5.Location = new System.Drawing.Point(3, 123);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(240, 54);
+            this.panel5.Size = new System.Drawing.Size(240, 57);
             this.panel5.TabIndex = 12;
             // 
             // btPn
             // 
             this.btPn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.btPn.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btPn.FlatAppearance.BorderSize = 0;
+            this.btPn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btPn.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btPn.ForeColor = System.Drawing.Color.White;
             this.btPn.Image = ((System.Drawing.Image)(resources.GetObject("btPn.Image")));
             this.btPn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btPn.Location = new System.Drawing.Point(-6, -10);
+            this.btPn.Location = new System.Drawing.Point(-3, 0);
             this.btPn.Name = "btPn";
             this.btPn.Padding = new System.Windows.Forms.Padding(12);
-            this.btPn.Size = new System.Drawing.Size(270, 73);
+            this.btPn.Size = new System.Drawing.Size(270, 57);
             this.btPn.TabIndex = 9;
-            this.btPn.Text = " Xem phiếu nhập";
+            this.btPn.Text = "    Xem phiếu nhập";
             this.btPn.UseVisualStyleBackColor = false;
             this.btPn.Click += new System.EventHandler(this.btPn_Click);
             // 
@@ -172,7 +179,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.Controls.Add(this.btQlTk);
-            this.panel6.Location = new System.Drawing.Point(3, 183);
+            this.panel6.Location = new System.Drawing.Point(3, 186);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(240, 54);
             this.panel6.TabIndex = 13;
@@ -180,16 +187,18 @@
             // btQlTk
             // 
             this.btQlTk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.btQlTk.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btQlTk.FlatAppearance.BorderSize = 0;
+            this.btQlTk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btQlTk.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btQlTk.ForeColor = System.Drawing.Color.White;
             this.btQlTk.Image = ((System.Drawing.Image)(resources.GetObject("btQlTk.Image")));
             this.btQlTk.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btQlTk.Location = new System.Drawing.Point(-6, -11);
+            this.btQlTk.Location = new System.Drawing.Point(-6, -20);
             this.btQlTk.Name = "btQlTk";
             this.btQlTk.Padding = new System.Windows.Forms.Padding(12);
-            this.btQlTk.Size = new System.Drawing.Size(281, 73);
+            this.btQlTk.Size = new System.Drawing.Size(281, 88);
             this.btQlTk.TabIndex = 9;
-            this.btQlTk.Text = "Quản lý tài khoản";
+            this.btQlTk.Text = "     Quản lý tài khoản";
             this.btQlTk.UseVisualStyleBackColor = false;
             this.btQlTk.Click += new System.EventHandler(this.btQlTk_Click);
             // 
@@ -197,7 +206,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.Controls.Add(this.btQlSach);
-            this.panel7.Location = new System.Drawing.Point(3, 243);
+            this.panel7.Location = new System.Drawing.Point(3, 246);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(240, 54);
             this.panel7.TabIndex = 14;
@@ -205,7 +214,9 @@
             // btQlSach
             // 
             this.btQlSach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.btQlSach.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btQlSach.FlatAppearance.BorderSize = 0;
+            this.btQlSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btQlSach.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btQlSach.ForeColor = System.Drawing.Color.White;
             this.btQlSach.Image = ((System.Drawing.Image)(resources.GetObject("btQlSach.Image")));
             this.btQlSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -214,7 +225,7 @@
             this.btQlSach.Padding = new System.Windows.Forms.Padding(12);
             this.btQlSach.Size = new System.Drawing.Size(261, 73);
             this.btQlSach.TabIndex = 9;
-            this.btQlSach.Text = "Quản lý sách";
+            this.btQlSach.Text = "  Quản lý sách";
             this.btQlSach.UseVisualStyleBackColor = false;
             this.btQlSach.Click += new System.EventHandler(this.btQlSach_Click);
             // 
@@ -222,7 +233,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.Transparent;
             this.panel8.Controls.Add(this.btDT);
-            this.panel8.Location = new System.Drawing.Point(3, 303);
+            this.panel8.Location = new System.Drawing.Point(3, 306);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(240, 54);
             this.panel8.TabIndex = 15;
@@ -230,7 +241,9 @@
             // btDT
             // 
             this.btDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.btDT.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDT.FlatAppearance.BorderSize = 0;
+            this.btDT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btDT.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btDT.ForeColor = System.Drawing.Color.White;
             this.btDT.Image = ((System.Drawing.Image)(resources.GetObject("btDT.Image")));
             this.btDT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -247,7 +260,7 @@
             // 
             this.panel9.BackColor = System.Drawing.Color.Transparent;
             this.panel9.Controls.Add(this.btFB);
-            this.panel9.Location = new System.Drawing.Point(3, 363);
+            this.panel9.Location = new System.Drawing.Point(3, 366);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(240, 54);
             this.panel9.TabIndex = 16;
@@ -255,16 +268,18 @@
             // btFB
             // 
             this.btFB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.btFB.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btFB.FlatAppearance.BorderSize = 0;
+            this.btFB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btFB.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btFB.ForeColor = System.Drawing.Color.White;
             this.btFB.Image = ((System.Drawing.Image)(resources.GetObject("btFB.Image")));
             this.btFB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btFB.Location = new System.Drawing.Point(-6, -11);
             this.btFB.Name = "btFB";
             this.btFB.Padding = new System.Windows.Forms.Padding(12);
-            this.btFB.Size = new System.Drawing.Size(270, 73);
+            this.btFB.Size = new System.Drawing.Size(270, 70);
             this.btFB.TabIndex = 9;
-            this.btFB.Text = "Xem feedback";
+            this.btFB.Text = "   Xem feedback";
             this.btFB.UseVisualStyleBackColor = false;
             this.btFB.Click += new System.EventHandler(this.btFB_Click);
             // 
@@ -272,22 +287,25 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.Controls.Add(this.btLogout);
+            this.panel4.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel4.Location = new System.Drawing.Point(3, 434);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(243, 54);
+            this.panel4.Size = new System.Drawing.Size(243, 66);
             this.panel4.TabIndex = 11;
             // 
             // btLogout
             // 
             this.btLogout.BackColor = System.Drawing.Color.DarkBlue;
-            this.btLogout.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLogout.FlatAppearance.BorderSize = 0;
+            this.btLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btLogout.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLogout.ForeColor = System.Drawing.Color.White;
             this.btLogout.Image = ((System.Drawing.Image)(resources.GetObject("btLogout.Image")));
             this.btLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btLogout.Location = new System.Drawing.Point(-8, -10);
+            this.btLogout.Location = new System.Drawing.Point(-3, 0);
             this.btLogout.Name = "btLogout";
             this.btLogout.Padding = new System.Windows.Forms.Padding(15);
-            this.btLogout.Size = new System.Drawing.Size(258, 73);
+            this.btLogout.Size = new System.Drawing.Size(258, 66);
             this.btLogout.TabIndex = 9;
             this.btLogout.Text = "Đăng xuất";
             this.btLogout.UseVisualStyleBackColor = false;
