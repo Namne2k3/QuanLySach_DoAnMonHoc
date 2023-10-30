@@ -153,7 +153,6 @@
             // 
             this.dtg.AllowUserToAddRows = false;
             this.dtg.BackgroundColor = System.Drawing.Color.White;
-            this.dtg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colMa,
@@ -167,7 +166,7 @@
             this.dtg.RowHeadersVisible = false;
             this.dtg.RowHeadersWidth = 51;
             this.dtg.RowTemplate.Height = 24;
-            this.dtg.Size = new System.Drawing.Size(559, 449);
+            this.dtg.Size = new System.Drawing.Size(559, 497);
             this.dtg.TabIndex = 0;
             // 
             // colMa
@@ -226,7 +225,7 @@
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.panel1.Location = new System.Drawing.Point(800, 37);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(559, 545);
+            this.panel1.Size = new System.Drawing.Size(559, 596);
             this.panel1.TabIndex = 10;
             // 
             // label6

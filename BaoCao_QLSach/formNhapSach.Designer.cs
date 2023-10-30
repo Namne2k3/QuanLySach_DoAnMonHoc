@@ -55,8 +55,7 @@
             // dtg
             // 
             this.dtg.AllowUserToAddRows = false;
-            this.dtg.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dtg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtg.BackgroundColor = System.Drawing.Color.White;
             this.dtg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colMa,
@@ -65,12 +64,12 @@
             this.colTL,
             this.colCS,
             this.colSL});
-            this.dtg.Location = new System.Drawing.Point(0, 124);
+            this.dtg.Location = new System.Drawing.Point(0, 95);
             this.dtg.Name = "dtg";
             this.dtg.RowHeadersVisible = false;
             this.dtg.RowHeadersWidth = 51;
             this.dtg.RowTemplate.Height = 24;
-            this.dtg.Size = new System.Drawing.Size(746, 389);
+            this.dtg.Size = new System.Drawing.Size(746, 514);
             this.dtg.TabIndex = 0;
             this.dtg.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_CellClick);
             this.dtg.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dtg_EditingControlShowing);
@@ -161,7 +160,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.groupBox1.Location = new System.Drawing.Point(285, 80);
+            this.groupBox1.Location = new System.Drawing.Point(1023, 94);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(317, 434);
             this.groupBox1.TabIndex = 4;
@@ -236,9 +235,9 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.dtg);
-            this.panel1.Location = new System.Drawing.Point(619, 1);
+            this.panel1.Location = new System.Drawing.Point(236, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(746, 513);
+            this.panel1.Size = new System.Drawing.Size(746, 612);
             this.panel1.TabIndex = 5;
             // 
             // label2
@@ -246,7 +245,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(233, 68);
+            this.label2.Location = new System.Drawing.Point(233, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(308, 34);
             this.label2.TabIndex = 1;
@@ -256,8 +255,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1426, 584);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1426, 562);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -168,7 +168,6 @@
             // 
             this.dtg.AllowUserToAddRows = false;
             this.dtg.BackgroundColor = System.Drawing.Color.White;
-            this.dtg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg.Location = new System.Drawing.Point(0, 75);
             this.dtg.Name = "dtg";
@@ -176,7 +175,7 @@
             this.dtg.RowHeadersVisible = false;
             this.dtg.RowHeadersWidth = 51;
             this.dtg.RowTemplate.Height = 24;
-            this.dtg.Size = new System.Drawing.Size(568, 523);
+            this.dtg.Size = new System.Drawing.Size(571, 565);
             this.dtg.TabIndex = 2;
             this.dtg.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_CellClick);
             // 
@@ -188,7 +187,7 @@
             this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(797, 41);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(571, 598);
+            this.panel1.Size = new System.Drawing.Size(571, 640);
             this.panel1.TabIndex = 3;
             // 
             // label6

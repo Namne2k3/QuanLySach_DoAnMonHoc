@@ -313,7 +313,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.panel2.BackColor = System.Drawing.Color.DarkBlue;
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Location = new System.Drawing.Point(-5, 0);
@@ -324,7 +324,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.button2.BackColor = System.Drawing.Color.DarkBlue;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;

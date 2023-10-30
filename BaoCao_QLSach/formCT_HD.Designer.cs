@@ -40,6 +40,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tbMaHD = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -168,12 +169,23 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Mã hóa đơn";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(157, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(211, 34);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Chi tiết hóa đơn";
+            // 
             // formCT_HD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(527, 602);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.tbDate);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
@@ -207,5 +219,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colTen;
         private System.Windows.Forms.DataGridViewTextBoxColumn colSL;
         private System.Windows.Forms.DataGridViewTextBoxColumn colGT;
+        private System.Windows.Forms.Label label5;
     }
 }

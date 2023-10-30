@@ -60,7 +60,7 @@ namespace BaoCao_QLSach
             {
                 row.Cells["colSelect"].Value = 0;
             }
-            //dtg.Columns[6].DefaultCellStyle.BackColor = Color.FromArgb(1, 0, 117, 214);
+            dtg.Columns[6].DefaultCellStyle.BackColor = Color.Orange;
         }
         private void formNhapSach_Load(object sender, EventArgs e)
         {
@@ -85,7 +85,6 @@ namespace BaoCao_QLSach
             }
             BindDataGrid(tempList);
             dtg.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dtg.Columns[6].DefaultCellStyle.BackColor = Color.FromArgb(1, 0, 117, 214);
             tbDate.Text = DateTime.Now.ToString();
         }
         private void Clear()

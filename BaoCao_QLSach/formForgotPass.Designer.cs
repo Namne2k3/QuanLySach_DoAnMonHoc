@@ -61,9 +61,9 @@
             this.tbEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbEmail.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.tbEmail.Location = new System.Drawing.Point(61, 126);
+            this.tbEmail.Location = new System.Drawing.Point(72, 126);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(370, 28);
+            this.tbEmail.Size = new System.Drawing.Size(359, 28);
             this.tbEmail.TabIndex = 1;
             // 
             // btRequest
@@ -88,9 +88,9 @@
             this.tbCode.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbCode.Font = new System.Drawing.Font("Bahnschrift", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.tbCode.Location = new System.Drawing.Point(125, 216);
+            this.tbCode.Location = new System.Drawing.Point(72, 216);
             this.tbCode.Name = "tbCode";
-            this.tbCode.Size = new System.Drawing.Size(306, 28);
+            this.tbCode.Size = new System.Drawing.Size(359, 28);
             this.tbCode.TabIndex = 3;
             // 
             // label2

@@ -57,9 +57,9 @@
             this.colGB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -303,7 +303,6 @@
             // 
             this.dtKS.AllowUserToAddRows = false;
             this.dtKS.BackgroundColor = System.Drawing.Color.White;
-            this.dtKS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtKS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtKS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colMa,
@@ -318,7 +317,7 @@
             this.dtKS.RowHeadersVisible = false;
             this.dtKS.RowHeadersWidth = 51;
             this.dtKS.RowTemplate.Height = 24;
-            this.dtKS.Size = new System.Drawing.Size(641, 336);
+            this.dtKS.Size = new System.Drawing.Size(641, 459);
             this.dtKS.TabIndex = 7;
             this.dtKS.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtKS_CellClick);
             // 
@@ -391,19 +390,16 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(719, 41);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(641, 547);
+            this.panel1.Size = new System.Drawing.Size(641, 670);
             this.panel1.TabIndex = 19;
             // 
-            // label10
+            // panel2
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(279, 22);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(132, 34);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Kho sách";
+            this.panel2.BackColor = System.Drawing.SystemColors.Window;
+            this.panel2.Location = new System.Drawing.Point(185, 179);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(385, 1);
+            this.panel2.TabIndex = 20;
             // 
             // pictureBox1
             // 
@@ -415,13 +411,16 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // panel2
+            // label10
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Window;
-            this.panel2.Location = new System.Drawing.Point(185, 179);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(385, 1);
-            this.panel2.TabIndex = 20;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(279, 22);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(132, 34);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Kho sách";
             // 
             // label11
             // 
