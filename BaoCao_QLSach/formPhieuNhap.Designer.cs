@@ -233,11 +233,11 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(181, 31);
+            this.label6.Location = new System.Drawing.Point(161, 31);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(208, 34);
+            this.label6.Size = new System.Drawing.Size(250, 34);
             this.label6.TabIndex = 1;
-            this.label6.Text = "Các phiếu nhập";
+            this.label6.Text = "Chi tiết phiếu nhập";
             // 
             // label7
             // 

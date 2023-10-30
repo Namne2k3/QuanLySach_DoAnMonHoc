@@ -216,11 +216,10 @@
   </data>
   <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAJhJREFUSEvtlE0KgzAQhXOJmr87tVXwcNruCz1Q21vUAwj6Bt5ChAETcaN+8O3m
-        vcCExJwcEO99CV/wnahk7qzRwVAXQhhyRPbPGh0MtrCfBhcqmYY1e8ZaWzjnqhhjnaJkJMsaHVzUb7bb
-        FL+s0ZGhWSjFD2t01qwIXlizZ7DHJ8x9aA/W6Gz+VWDoBrM+OxxyZc3JcTBmBKgrqul9tcOWAAAAAElF
-        TkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABfSURBVEhL7dSxDYAwDERR7xCSRdh/JzYwF+IGiZKr8p90
+        jZuTLMuBfWTmoZzmtKpbNBjKpbjNjlG1T3Gvodvs6FW7aNCUr/X8mfeqAStdHA/EgQeCHejieCAOPBC4
+        RdzNA4G6FbtxkQAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="menuTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
