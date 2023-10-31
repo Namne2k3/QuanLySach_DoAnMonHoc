@@ -30,10 +30,12 @@ namespace BaoCao_QLSach
                 groupBox1.Text = "Feedback " + item.MaSach;
 
                 // Set the size of the GroupBox
-                groupBox1.Size = new Size(400, 200);
+                groupBox1.Size = new Size(600, 200);
 
                 // Set the margin of the GroupBox
                 groupBox1.Margin = new Padding(10);
+
+                groupBox1.ForeColor = Color.FromArgb(0, 0, 117, 214);
 
                 // Create an array of labels
                 Label[] labels = new Label[3];
@@ -73,6 +75,7 @@ namespace BaoCao_QLSach
                     // Set the size of the textbox
                     textBoxes[j].Size = new Size(100, 20);
 
+
                     if (j == 0)
                         textBoxes[j].Text = item.TenTK;
                     if (j == 1)
@@ -81,6 +84,7 @@ namespace BaoCao_QLSach
                         textBoxes[j].Text = item.DanhGia + " Sao";
 
                     textBoxes[j].ReadOnly = true;
+                    textBoxes[j].ForeColor = Color.FromArgb(0, 0, 117, 214);
 
                     // Add the textbox to the GroupBox
                     groupBox1.Controls.Add(textBoxes[j]);
@@ -93,7 +97,7 @@ namespace BaoCao_QLSach
                 richTextBox1.Location = new Point(200, 20);
 
                 // Set the size of the RichTextBox
-                richTextBox1.Size = new Size(180, 160);
+                richTextBox1.Size = new Size(360, 160);
 
                 // Add some text to the RichTextBox
                 richTextBox1.Text = item.Phanhoi;
@@ -102,6 +106,7 @@ namespace BaoCao_QLSach
 
                 // Add the RichTextBox to the GroupBox
                 groupBox1.Controls.Add(richTextBox1);
+                groupBox1.FlatStyle = FlatStyle.Flat;
 
                 // Add the GroupBox to the FlowLayoutPanel
                 flowLayoutPanel1.Controls.Add(groupBox1);
@@ -119,11 +124,11 @@ namespace BaoCao_QLSach
             // Set the wrap contents to false
             flowLayoutPanel1.WrapContents = false;
 
-
-            flowLayoutPanel1.Size = new Size(500, 500);
+            flowLayoutPanel1.Size = new Size(750, 500);
             // Enable auto-scrolling
             flowLayoutPanel1.AutoScroll = true;
-            flowLayoutPanel1.Location = new Point(250, 25);
+            flowLayoutPanel1.Location = new Point(250, 50);
+            flowLayoutPanel1.ForeColor = Color.FromArgb(0, 0, 117, 214);
 
             // Add the panel to the form
             this.Controls.Add(flowLayoutPanel1);

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formUser));
             this.dv = new System.Windows.Forms.DataGridView();
             this.colMa = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,12 +48,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.btCart = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.btAccount = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.btFeedback = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.btLogout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dv)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -65,6 +67,14 @@
             // 
             this.dv.AllowUserToAddRows = false;
             this.dv.BackgroundColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colMa,
@@ -73,12 +83,20 @@
             this.colGB,
             this.colTL,
             this.colSL});
-            this.dv.Location = new System.Drawing.Point(28, 216);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dv.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dv.Location = new System.Drawing.Point(28, 220);
             this.dv.Name = "dv";
             this.dv.RowHeadersVisible = false;
             this.dv.RowHeadersWidth = 51;
             this.dv.RowTemplate.Height = 24;
-            this.dv.Size = new System.Drawing.Size(858, 406);
+            this.dv.Size = new System.Drawing.Size(858, 402);
             this.dv.TabIndex = 2;
             this.dv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dv_CellClick);
             // 
@@ -242,30 +260,6 @@
             this.panel1.Size = new System.Drawing.Size(200, 66);
             this.panel1.TabIndex = 0;
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btAccount);
-            this.panel3.Location = new System.Drawing.Point(209, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 66);
-            this.panel3.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btFeedback);
-            this.panel4.Location = new System.Drawing.Point(415, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 66);
-            this.panel4.TabIndex = 2;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.btLogout);
-            this.panel5.Location = new System.Drawing.Point(621, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(272, 66);
-            this.panel5.TabIndex = 3;
-            // 
             // btCart
             // 
             this.btCart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
@@ -283,6 +277,14 @@
             this.btCart.Text = "    Giỏ Hàng";
             this.btCart.UseVisualStyleBackColor = false;
             this.btCart.Click += new System.EventHandler(this.btCart_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btAccount);
+            this.panel3.Location = new System.Drawing.Point(209, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 66);
+            this.panel3.TabIndex = 1;
             // 
             // btAccount
             // 
@@ -302,6 +304,14 @@
             this.btAccount.UseVisualStyleBackColor = false;
             this.btAccount.Click += new System.EventHandler(this.btAccount_Click);
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btFeedback);
+            this.panel4.Location = new System.Drawing.Point(415, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 66);
+            this.panel4.TabIndex = 2;
+            // 
             // btFeedback
             // 
             this.btFeedback.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
@@ -319,6 +329,14 @@
             this.btFeedback.Text = "    FeedBack";
             this.btFeedback.UseVisualStyleBackColor = false;
             this.btFeedback.Click += new System.EventHandler(this.btFeedback_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.btLogout);
+            this.panel5.Location = new System.Drawing.Point(621, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(272, 66);
+            this.panel5.TabIndex = 3;
             // 
             // btLogout
             // 
@@ -357,6 +375,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mua sách";
             this.Load += new System.EventHandler(this.formUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dv)).EndInit();

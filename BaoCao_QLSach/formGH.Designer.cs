@@ -303,6 +303,7 @@
             this.Controls.Add(this.tbSL);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "formGH";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Giỏ hàng";
             this.Load += new System.EventHandler(this.formGH_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dg)).EndInit();

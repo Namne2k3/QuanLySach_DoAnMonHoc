@@ -34,9 +34,9 @@
             this.tbDate = new System.Windows.Forms.TextBox();
             this.calender = new System.Windows.Forms.MonthCalendar();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,16 +111,14 @@
             this.panel1.Size = new System.Drawing.Size(559, 555);
             this.panel1.TabIndex = 6;
             // 
-            // label3
+            // flowLayoutPanel2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.label3.Location = new System.Drawing.Point(200, 24);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(144, 34);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Doanh thu";
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.flowLayoutPanel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(141, 390);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(326, 1);
+            this.flowLayoutPanel2.TabIndex = 7;
             // 
             // flowLayoutPanel1
             // 
@@ -131,14 +129,16 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(326, 1);
             this.flowLayoutPanel1.TabIndex = 6;
             // 
-            // flowLayoutPanel2
+            // label3
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.flowLayoutPanel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(141, 390);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(326, 1);
-            this.flowLayoutPanel2.TabIndex = 7;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.label3.Location = new System.Drawing.Point(200, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(144, 34);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Doanh thu";
             // 
             // formDoanhThu
             // 

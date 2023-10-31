@@ -172,7 +172,6 @@
             // 
             this.dtg.AllowUserToAddRows = false;
             this.dtg.BackgroundColor = System.Drawing.Color.White;
-            this.dtg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg.Location = new System.Drawing.Point(0, 63);
             this.dtg.Name = "dtg";
@@ -233,6 +232,7 @@
             this.Controls.Add(this.rtbFB);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "formFeedback";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Đăng phản hồi";
             this.Load += new System.EventHandler(this.formFeedback_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ptb5)).EndInit();

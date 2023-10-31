@@ -140,11 +140,15 @@ namespace BaoCao_QLSach
                     var findKsMs = chiTietKsService.FindKsks(khoSachService.FindKsById(cbKS.SelectedValue.ToString()).MaKS, tbMa.Text);
                     if (findKsMs != null)
                     {
-                        chiTietKsService.Delete(findKsMs);
-                        chiTietKsService.Save();
-                        BindDataGrid(khoSachService.FindKsById(cbKS.SelectedValue.ToString()));
-                        Clear();
-                        MessageBox.Show("Da xoa!");
+                        DialogResult result = MessageBox.Show("Tiến hành xóa sách khỏi kho", "Bạn có muốn xác nhận", MessageBoxButtons.YesNo);
+                        if (result == DialogResult.Yes)
+                        {
+                            chiTietKsService.Delete(findKsMs);
+                            chiTietKsService.Save();
+                            BindDataGrid(khoSachService.FindKsById(cbKS.SelectedValue.ToString()));
+                            Clear();
+                            MessageBox.Show("Da xoa!");
+                        }
                     }
                     else
                     {

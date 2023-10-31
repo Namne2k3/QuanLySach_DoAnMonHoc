@@ -107,7 +107,6 @@
             // dt
             // 
             this.dt.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt.Location = new System.Drawing.Point(3, 59);
             this.dt.Name = "dt";
@@ -222,6 +221,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "formTK";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Tài khoản";
             this.Load += new System.EventHandler(this.formTK_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dt)).EndInit();

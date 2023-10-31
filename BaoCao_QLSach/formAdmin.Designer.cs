@@ -114,7 +114,7 @@
             this.btMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btMenu.Location = new System.Drawing.Point(-6, -19);
             this.btMenu.Name = "btMenu";
-            this.btMenu.Padding = new System.Windows.Forms.Padding(12);
+            this.btMenu.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.btMenu.Size = new System.Drawing.Size(253, 86);
             this.btMenu.TabIndex = 9;
             this.btMenu.Text = "Menu";
@@ -141,7 +141,7 @@
             this.btImport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btImport.Location = new System.Drawing.Point(-6, -9);
             this.btImport.Name = "btImport";
-            this.btImport.Padding = new System.Windows.Forms.Padding(12);
+            this.btImport.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.btImport.Size = new System.Drawing.Size(253, 73);
             this.btImport.TabIndex = 9;
             this.btImport.Text = "Nhập sách";
@@ -168,7 +168,7 @@
             this.btPn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btPn.Location = new System.Drawing.Point(-3, 0);
             this.btPn.Name = "btPn";
-            this.btPn.Padding = new System.Windows.Forms.Padding(12);
+            this.btPn.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.btPn.Size = new System.Drawing.Size(270, 57);
             this.btPn.TabIndex = 9;
             this.btPn.Text = "    Xem phiếu nhập";
@@ -195,7 +195,7 @@
             this.btQlTk.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btQlTk.Location = new System.Drawing.Point(-6, -20);
             this.btQlTk.Name = "btQlTk";
-            this.btQlTk.Padding = new System.Windows.Forms.Padding(12);
+            this.btQlTk.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.btQlTk.Size = new System.Drawing.Size(281, 88);
             this.btQlTk.TabIndex = 9;
             this.btQlTk.Text = "     Quản lý tài khoản";
@@ -222,7 +222,7 @@
             this.btQlSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btQlSach.Location = new System.Drawing.Point(-6, -11);
             this.btQlSach.Name = "btQlSach";
-            this.btQlSach.Padding = new System.Windows.Forms.Padding(12);
+            this.btQlSach.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.btQlSach.Size = new System.Drawing.Size(261, 73);
             this.btQlSach.TabIndex = 9;
             this.btQlSach.Text = "  Quản lý sách";
@@ -249,7 +249,7 @@
             this.btDT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btDT.Location = new System.Drawing.Point(-6, -11);
             this.btDT.Name = "btDT";
-            this.btDT.Padding = new System.Windows.Forms.Padding(12);
+            this.btDT.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.btDT.Size = new System.Drawing.Size(253, 73);
             this.btDT.TabIndex = 9;
             this.btDT.Text = "Doanh thu";
@@ -276,7 +276,7 @@
             this.btFB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btFB.Location = new System.Drawing.Point(-6, -11);
             this.btFB.Name = "btFB";
-            this.btFB.Padding = new System.Windows.Forms.Padding(12);
+            this.btFB.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.btFB.Size = new System.Drawing.Size(270, 70);
             this.btFB.TabIndex = 9;
             this.btFB.Text = "   Xem feedback";
@@ -304,7 +304,7 @@
             this.btLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btLogout.Location = new System.Drawing.Point(-3, 0);
             this.btLogout.Name = "btLogout";
-            this.btLogout.Padding = new System.Windows.Forms.Padding(15);
+            this.btLogout.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
             this.btLogout.Size = new System.Drawing.Size(258, 66);
             this.btLogout.TabIndex = 9;
             this.btLogout.Text = "Đăng xuất";
@@ -367,6 +367,7 @@
             this.Controls.Add(this.sidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý sách";
             this.Load += new System.EventHandler(this.formAdmin_Load);
             this.sidebar.ResumeLayout(false);

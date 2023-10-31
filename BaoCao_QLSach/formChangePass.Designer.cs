@@ -192,6 +192,7 @@
             this.Controls.Add(this.btExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formChangePass";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thay đổi mật khẩu";
             this.Load += new System.EventHandler(this.formChangePass_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errNhapLaiMk)).EndInit();

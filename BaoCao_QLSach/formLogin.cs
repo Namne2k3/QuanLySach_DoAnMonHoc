@@ -17,11 +17,14 @@ namespace BaoCao_QLSach
         public formLogin()
         {
             InitializeComponent();
+            SetStyle(ControlStyles.SupportsTransparentBackColor, true);
         }
         TaiKhoanService taiKhoanService = new TaiKhoanService();
         private void Form1_Load(object sender, EventArgs e)
         {
             tbMk.UseSystemPasswordChar = true;
+            tbTk.Text = "admin";
+            tbMk.Text = "admin";
         }
         private void linkQuenMK_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -103,6 +106,10 @@ namespace BaoCao_QLSach
         private void btExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
         }
     }
 }

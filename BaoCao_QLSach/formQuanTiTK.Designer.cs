@@ -101,6 +101,7 @@
             this.tbSL.BackColor = System.Drawing.Color.White;
             this.tbSL.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbSL.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.tbSL.Location = new System.Drawing.Point(285, 369);
             this.tbSL.Name = "tbSL";
             this.tbSL.ReadOnly = true;
@@ -123,6 +124,7 @@
             this.tbMK.BackColor = System.Drawing.Color.White;
             this.tbMK.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbMK.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.tbMK.Location = new System.Drawing.Point(451, 225);
             this.tbMK.Name = "tbMK";
             this.tbMK.ReadOnly = true;

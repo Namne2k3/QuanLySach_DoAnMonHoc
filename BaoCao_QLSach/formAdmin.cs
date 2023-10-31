@@ -213,8 +213,12 @@ namespace BaoCao_QLSach
 
         private void btLogout_Click(object sender, EventArgs e)
         {
-            this.Close();
-            MessageBox.Show("Đã đăng xuất!");
+            DialogResult result = MessageBox.Show("Tiến hành đăng xuất", "Bạn có muốn xác nhận", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+                MessageBox.Show("Đã đăng xuất!");
+            }
         }
     }
 }
